@@ -27,6 +27,7 @@
     <h1>Welcome to the Game !</h1>
 
 <button id = "random">Randomize !</button>
+<br><br>
     <div id="calendar">
 
       <!-- day cells will be inserted here -->
@@ -59,15 +60,36 @@
 
 }
 
-let random_button = document.createElement("button");
+        let random_button = document.getElementById("random");
 
-random_button.classList.add("random_button");
+        let array_random_numbers = []
 
-random_button.innerText = "Click here to generate a random number";
+        // function to generate a random number between 1 and 76
+        const random_gen = function() {
+            let num = Math.floor(Math.random() * 76 + 1);
+            return num;
+        }
 
-// let random = document.getElementById("random");
+        random_button.addEventListener("click", function() {
+            
+                        let num = random_gen();
+                        while (num in array_random_numbers) {
+                            num = random_gen();
+                        }
+                        console.log(num, "This is the number:");
 
-// random_button.appendChild(random);
+
+        });
+
+        for (i = 0; i < array_random_numbers.length; i++) {
+            
+        }
+
+        // console.log(random_gen())
+
+
+
+
 
     </script>
   </body>
