@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <title>Bingo Game!</title>
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style></style>
+
+  </head>
+
+  <body>
+
+    <h1>Welcome to the Game !</h1>
+
+<button id = "random">Randomize !</button>
+    <div id="calendar">
+
+      <!-- day cells will be inserted here -->
+
+    </div>
+
+    <!-- add event form sections -->
+
+    <div id="addMeeting">
+
+
+
+    </div>
+    <script>
+
+    let calendar = document.getElementById("calendar");
+    
+
+    for (let i = 0; i < 75; i++) {
+
+                let cell = document.createElement("div");
+                cell.classList.add("day");
+
+                let day = document.createElement("h3");
+                day.innerText = i + 1;
+
+                cell.appendChild(day);
+
+                calendar.appendChild(cell);
+
+}
+
+let random_button = document.createElement("button");
+
+random_button.classList.add("random_button");
+
+random_button.innerText = "Click here to generate a random number";
+
+// let random = document.getElementById("random");
+
+// random_button.appendChild(random);
+
+    </script>
+  </body>
+
+</html>
+
+
+<!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
+
+        EXTRA: 
+        - Take ALWAYS a new number (eg. avoid randoming the number 10 3 times)
+        - Create a USER BOARD with 24 randomized numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    -->

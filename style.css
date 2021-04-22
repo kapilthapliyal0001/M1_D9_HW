@@ -1,0 +1,180 @@
+body {
+
+    background-color: #0f9948;
+  
+    color: white;
+  
+    font-family: "Nunito", sans-serif;
+  
+    max-width: 768px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  
+  
+  #calendar {
+  
+    width: 100%;
+  
+    margin-bottom: 20px;
+  
+    border: 3px solid white;
+  
+  }
+  
+  
+  
+  .day {
+  
+    display: inline-block;
+  
+    width: 50px;
+  
+    text-align: center;
+  
+    min-height: 20px;
+
+    border: thin;
+
+    /* border-block: medium dashed blue; */
+
+    /* background:linear-gradient(#084085,#084085) center/100% 5px no-repeat; */
+  
+  }
+  
+  
+  
+  h1 {
+  
+    text-align: center;
+  
+    margin-top: 20px;
+  
+    color: #030e08;
+  
+    font-weight: bold;
+  
+    text-transform: uppercase;
+  
+  }
+  
+  
+  
+  #addMeeting {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+  }
+  
+  
+  
+  #addMeeting div {
+  
+    text-align: center;
+  
+  }
+  
+  
+  
+  input,
+  
+  button {
+  
+    background-color: #00db71;
+  
+    color: rgb(80, 80, 80);
+  
+    border: 0;
+  
+    padding: 10px;
+  
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  button {
+  
+    color: black;
+  
+  }
+  
+  
+  
+  ::placeholder {
+  
+    color: rgb(80, 80, 80);
+  
+  }
+  
+  
+  
+  .selected {
+  
+    border: 1px solid white;
+  
+  }
+  
+  
+  
+  .selected h3 {
+  
+    font-weight: bolder;
+  
+  }
+  
+  
+  
+  #appointments {
+  
+    margin-top: 50px;
+  
+    display: none;
+  
+  }
+  
+  #random {
+    text-align: center;
+  
+    margin-top: 20px;
+  
+    color: #030e08;
+  
+    font-weight: bold;
+  
+    text-transform: uppercase;
+  }
+  
+  
+  ul {
+  
+    padding: 0;
+  
+    list-style-type: none;
+  
+  }
+  
+  
+  
+  li {
+  
+    overflow: hidden;
+  
+    text-overflow: ellipsis;
+  
+  }
+  
+  
+  
+  .with-event {
+  
+    color: #00ff84;
+  
+  
